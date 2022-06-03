@@ -28,6 +28,13 @@ Public Class Registrar
                             If emailchek.Text = email.Text Then
                                 ConexiónBD(consulta)
                                 Errorlabel.Text = "Usuario Creado"
+                                user.Text = Nothing
+                                pasw.Text = Nothing
+                                passwchek.Text = Nothing
+                                email.Text = Nothing
+                                emailchek.Text = Nothing
+
+                                usererror.Text = ""
                             Else
                                 Errorlabel.Text = "El email no coincide"
                             End If
@@ -37,8 +44,8 @@ Public Class Registrar
                         Errorlabel.Text = "La contraseña no coincide"
                     End If
                 End If
-
-                usererror.Text = "El usuario ya existe"
+            Else
+                Errorlabel.Text = "El usuario ya existe"
             End If
         End If
 
