@@ -27,7 +27,8 @@ Public Class Registrar
                         Else
                             If emailchek.Text = email.Text Then
                                 ConexiónBD(consulta)
-                                Errorlabel.Text = "Usuario Creado"
+                                MsgBox("Usuario Creado")
+
                                 user.Text = Nothing
                                 pasw.Text = Nothing
                                 passwchek.Text = Nothing
@@ -35,6 +36,8 @@ Public Class Registrar
                                 emailchek.Text = Nothing
 
                                 usererror.Text = ""
+                                Me.Hide()
+
                             Else
                                 Errorlabel.Text = "El email no coincide"
                             End If

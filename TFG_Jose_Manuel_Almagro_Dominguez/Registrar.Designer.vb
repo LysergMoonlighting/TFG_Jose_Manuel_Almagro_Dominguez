@@ -22,6 +22,7 @@ Partial Class Registrar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Registrar))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -71,7 +72,7 @@ Partial Class Registrar
         'user
         '
         Me.user.Location = New System.Drawing.Point(23, 77)
-        Me.user.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.user.Margin = New System.Windows.Forms.Padding(2)
         Me.user.Name = "user"
         Me.user.Size = New System.Drawing.Size(171, 20)
         Me.user.TabIndex = 3
@@ -79,7 +80,7 @@ Partial Class Registrar
         'pasw
         '
         Me.pasw.Location = New System.Drawing.Point(23, 135)
-        Me.pasw.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pasw.Margin = New System.Windows.Forms.Padding(2)
         Me.pasw.Name = "pasw"
         Me.pasw.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.pasw.Size = New System.Drawing.Size(171, 20)
@@ -88,7 +89,7 @@ Partial Class Registrar
         'email
         '
         Me.email.Location = New System.Drawing.Point(23, 206)
-        Me.email.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.email.Margin = New System.Windows.Forms.Padding(2)
         Me.email.Name = "email"
         Me.email.Size = New System.Drawing.Size(171, 20)
         Me.email.TabIndex = 6
@@ -96,7 +97,7 @@ Partial Class Registrar
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(23, 292)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(379, 53)
         Me.Button1.TabIndex = 8
@@ -106,7 +107,7 @@ Partial Class Registrar
         'emailchek
         '
         Me.emailchek.Location = New System.Drawing.Point(232, 206)
-        Me.emailchek.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.emailchek.Margin = New System.Windows.Forms.Padding(2)
         Me.emailchek.Name = "emailchek"
         Me.emailchek.Size = New System.Drawing.Size(171, 20)
         Me.emailchek.TabIndex = 7
@@ -114,7 +115,7 @@ Partial Class Registrar
         'passwchek
         '
         Me.passwchek.Location = New System.Drawing.Point(232, 135)
-        Me.passwchek.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.passwchek.Margin = New System.Windows.Forms.Padding(2)
         Me.passwchek.Name = "passwchek"
         Me.passwchek.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwchek.Size = New System.Drawing.Size(171, 20)
@@ -126,9 +127,9 @@ Partial Class Registrar
         Me.Label4.Location = New System.Drawing.Point(230, 190)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(32, 13)
+        Me.Label4.Size = New System.Drawing.Size(66, 13)
         Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Email"
+        Me.Label4.Text = "Repite Email"
         '
         'Label5
         '
@@ -188,9 +189,10 @@ Partial Class Registrar
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Registrar"
-        Me.Text = "Form1"
+        Me.Text = "Crear Usuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

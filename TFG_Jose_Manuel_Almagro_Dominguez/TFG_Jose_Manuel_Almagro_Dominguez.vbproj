@@ -73,6 +73,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosJugador.Designer.vb">
+      <DependentUpon>DatosJugador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DatosJugador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loging.Designer.vb">
+      <DependentUpon>Loging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Registrar.Designer.vb">
       <DependentUpon>Registrar.vb</DependentUpon>
     </Compile>
@@ -103,6 +121,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DatosJugador.resx">
+      <DependentUpon>DatosJugador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loging.resx">
+      <DependentUpon>Loging.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pruebas.resx">
       <DependentUpon>Pruebas.vb</DependentUpon>
     </EmbeddedResource>

@@ -12,3 +12,5 @@ C:\Users\lyser\source\repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Al
 C:\Users\lyser\source\repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.pdb
 C:\Users\lyser\source\repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.Pruebas.resources
 C:\Users\lyser\source\repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.Registrar.resources
+C:\Users\lyser\Source\Repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.Loging.resources
+C:\Users\lyser\Source\Repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.DatosJugador.resources
