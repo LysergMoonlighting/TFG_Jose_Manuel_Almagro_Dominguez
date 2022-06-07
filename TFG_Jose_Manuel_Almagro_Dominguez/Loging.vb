@@ -13,6 +13,8 @@ Public Class Loging
             Dim DatosJugadorView As New DatosJugador
             DatosJugadorView.idPlayer = idPlayer
             DatosJugadorView.Show()
+            user.Text = Nothing
+            pasw.Text = Nothing
             Me.Hide()
         End If
     End Sub

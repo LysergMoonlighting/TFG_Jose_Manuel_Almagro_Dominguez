@@ -4,9 +4,10 @@ Public Class DatosJugador
 
     Public Property idPlayer As Integer
     Public Property namePlayer As String
+    Dim characterToUse As Integer
     Private Sub DatosJugador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DatosJugador()
-        ConexiónBD()
+        ConexionBD()
     End Sub
     Public Function DatosJugador()
         Dim consulta As String = "Select * from Player where id = " & idPlayer & " "
@@ -38,7 +39,7 @@ Public Class DatosJugador
 
     End Function
 
-    Public Function ConexiónBD()
+    Public Function ConexionBD()
 
         Dim cadenaConexion As SqlConnectionStringBuilder = New SqlConnectionStringBuilder
         Dim conexion As SqlConnection
@@ -91,4 +92,108 @@ Public Class DatosJugador
         conexion.Close()
 
     End Function
+    Public Function EliminarPersonaje()
+
+        Dim cadenaConexion As SqlConnectionStringBuilder = New SqlConnectionStringBuilder
+        Dim conexion As SqlConnection
+        Dim commando As SqlCommand
+        Dim consulta As String
+
+
+        cadenaConexion.DataSource = "localhost\SQLEXPRESS"
+        cadenaConexion.UserID = "sa"
+        cadenaConexion.Password = "Otto13311331."
+        cadenaConexion.InitialCatalog = "TFG_Jose_Manuel_Almagro_Dominguez_Juego"
+
+        conexion = New SqlConnection(cadenaConexion.ConnectionString)
+        consulta = "delete From Character where id = " & characterToUse
+        commando = New SqlCommand(consulta, conexion)
+
+
+        conexion.Open()
+
+        commando.ExecuteNonQuery()
+
+        conexion.Close()
+
+
+
+    End Function
+    Public Function EliminarJugador()
+
+        Dim cadenaConexion As SqlConnectionStringBuilder = New SqlConnectionStringBuilder
+        Dim conexion As SqlConnection
+        Dim commando As SqlCommand
+        Dim consulta As String
+
+
+        cadenaConexion.DataSource = "localhost\SQLEXPRESS"
+        cadenaConexion.UserID = "sa"
+        cadenaConexion.Password = "Otto13311331."
+        cadenaConexion.InitialCatalog = "TFG_Jose_Manuel_Almagro_Dominguez_Juego"
+
+        conexion = New SqlConnection(cadenaConexion.ConnectionString)
+        consulta = "delete From Player where id = " & idPlayer
+        commando = New SqlCommand(consulta, conexion)
+
+
+        conexion.Open()
+
+        commando.ExecuteNonQuery()
+
+        conexion.Close()
+
+
+
+    End Function
+
+    Private Sub recargar_Click(sender As Object, e As EventArgs) Handles recargar.Click
+        ConexionBD()
+    End Sub
+
+    Private Sub Desconectar_Click(sender As Object, e As EventArgs) Handles Desconectar.Click
+
+        Loging.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub btCrear_Click(sender As Object, e As EventArgs) Handles btCrear.Click
+        Dim CrearPJview = New CrearPJ
+        CrearPJview.idPlayer = idPlayer
+        CrearPJview.Show()
+
+    End Sub
+
+    Private Sub BttEliminarCharacter_Click(sender As Object, e As EventArgs) Handles BttEliminarCharacter.Click
+        EliminarPersonaje()
+        ConexionBD()
+    End Sub
+
+    Private Sub dgvPersonajes_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPersonajes.CellClick
+        characterToUse = CInt(dgvPersonajes.CurrentRow.Cells(0).Value.ToString)
+    End Sub
+
+    Private Sub dgvPersonajes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPersonajes.CellDoubleClick
+        characterToUse = CInt(dgvPersonajes.CurrentRow.Cells(0).Value.ToString)
+
+        MenuPersonaje.idPlayer = idPlayer
+        MenuPersonaje.idCharacter = characterToUse
+        MenuPersonaje.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Entrar_Click(sender As Object, e As EventArgs) Handles Entrar.Click
+        MenuPersonaje.idPlayer = idPlayer
+        MenuPersonaje.idCharacter = characterToUse
+        MenuPersonaje.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EliminarCuenta_Click(sender As Object, e As EventArgs) Handles EliminarCuenta.Click
+        EliminarJugador()
+        Loging.Show()
+        Me.Hide()
+    End Sub
 End Class
