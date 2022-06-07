@@ -79,6 +79,12 @@
     <Compile Include="DatosJugador.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Loging.Designer.vb">
       <DependentUpon>Loging.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,9 @@
   <ItemGroup>
     <EmbeddedResource Include="DatosJugador.resx">
       <DependentUpon>DatosJugador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loging.resx">
       <DependentUpon>Loging.vb</DependentUpon>
