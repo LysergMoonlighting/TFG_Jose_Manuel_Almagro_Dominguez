@@ -5,7 +5,7 @@ Public Class DatosJugador
     Public Property idPlayer As Integer
     Public Property namePlayer As String
 
-    Dim characterToUse As String
+    Dim characterToUse As Integer
     Private Sub DatosJugador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DatosJugador()
         ConexiónBD()
@@ -97,10 +97,10 @@ Public Class DatosJugador
     End Function
 
     Private Sub dgvPersonajes_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPersonajes.CellClick
-        characterToUse = dgvPersonajes.CurrentRow.Cells(0).Value.ToString
+        characterToUse = Convert.ToInt32(dgvPersonajes.CurrentRow.Cells(0).Value.ToString)
     End Sub
 
     Private Sub dgvPersonajes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPersonajes.CellDoubleClick
-        characterToUse = dgvPersonajes.CurrentRow.Cells(0).Value.ToString
+        characterToUse = Convert.ToInt32(dgvPersonajes.CurrentRow.Cells(0).Value.ToString)
     End Sub
 End Class
