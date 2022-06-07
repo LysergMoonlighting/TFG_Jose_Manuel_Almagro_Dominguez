@@ -73,22 +73,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrearPJ.Designer.vb">
+      <DependentUpon>CrearPJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearPJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DatosJugador.Designer.vb">
       <DependentUpon>DatosJugador.vb</DependentUpon>
     </Compile>
     <Compile Include="DatosJugador.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Loging.Designer.vb">
       <DependentUpon>Loging.vb</DependentUpon>
     </Compile>
     <Compile Include="Loging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPersonaje.Designer.vb">
+      <DependentUpon>MenuPersonaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPersonaje.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\Form1.Designer.vb">
@@ -127,14 +133,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CrearPJ.resx">
+      <DependentUpon>CrearPJ.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DatosJugador.resx">
       <DependentUpon>DatosJugador.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Loging.resx">
       <DependentUpon>Loging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPersonaje.resx">
+      <DependentUpon>MenuPersonaje.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pruebas.resx">
       <DependentUpon>Pruebas.vb</DependentUpon>

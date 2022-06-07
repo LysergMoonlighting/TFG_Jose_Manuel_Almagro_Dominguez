@@ -99,7 +99,9 @@ Public Class Pruebas
         Tabla2.Refresh()
     End Sub
 
+    Private Sub Tabla1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Tabla1.CellContentClick
 
+    End Sub
 
 
 End Class
