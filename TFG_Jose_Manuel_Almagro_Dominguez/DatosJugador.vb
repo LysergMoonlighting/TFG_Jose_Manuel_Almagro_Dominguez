@@ -4,10 +4,14 @@ Public Class DatosJugador
 
     Public Property idPlayer As Integer
     Public Property namePlayer As String
+
+    Dim characterToUse As String
     Private Sub DatosJugador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DatosJugador()
         ConexiónBD()
     End Sub
+
+
     Public Function DatosJugador()
         Dim consulta As String = "Select * from Player where id = " & idPlayer & " "
         Dim cadenaConexion As SqlConnectionStringBuilder = New SqlConnectionStringBuilder
@@ -91,4 +95,12 @@ Public Class DatosJugador
         conexion.Close()
 
     End Function
+
+    Private Sub dgvPersonajes_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPersonajes.CellClick
+        characterToUse = dgvPersonajes.CurrentRow.Cells(0).Value.ToString
+    End Sub
+
+    Private Sub dgvPersonajes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPersonajes.CellDoubleClick
+        characterToUse = dgvPersonajes.CurrentRow.Cells(0).Value.ToString
+    End Sub
 End Class
