@@ -24,6 +24,7 @@ Partial Class MenuPersonaje
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPersonaje))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Desconectar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btImventario = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -34,7 +35,6 @@ Partial Class MenuPersonaje
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.Desconectar = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -75,6 +75,16 @@ Partial Class MenuPersonaje
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(941, 325)
         Me.TableLayoutPanel1.TabIndex = 0
+        '
+        'Desconectar
+        '
+        Me.Desconectar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Desconectar.Image = CType(resources.GetObject("Desconectar.Image"), System.Drawing.Image)
+        Me.Desconectar.Location = New System.Drawing.Point(849, 19)
+        Me.Desconectar.Name = "Desconectar"
+        Me.Desconectar.Size = New System.Drawing.Size(89, 54)
+        Me.Desconectar.TabIndex = 10
+        Me.Desconectar.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -177,16 +187,6 @@ Partial Class MenuPersonaje
         Me.Button9.TabIndex = 9
         Me.Button9.Text = "Button9"
         Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Desconectar
-        '
-        Me.Desconectar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Desconectar.Image = CType(resources.GetObject("Desconectar.Image"), System.Drawing.Image)
-        Me.Desconectar.Location = New System.Drawing.Point(849, 19)
-        Me.Desconectar.Name = "Desconectar"
-        Me.Desconectar.Size = New System.Drawing.Size(89, 54)
-        Me.Desconectar.TabIndex = 10
-        Me.Desconectar.UseVisualStyleBackColor = True
         '
         'MenuPersonaje
         '

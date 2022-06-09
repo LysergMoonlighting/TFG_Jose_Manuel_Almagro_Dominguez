@@ -85,6 +85,12 @@
     <Compile Include="DatosJugador.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inventario.Designer.vb">
+      <DependentUpon>Inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Loging.Designer.vb">
       <DependentUpon>Loging.vb</DependentUpon>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DatosJugador.resx">
       <DependentUpon>DatosJugador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario.resx">
+      <DependentUpon>Inventario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loging.resx">
       <DependentUpon>Loging.vb</DependentUpon>

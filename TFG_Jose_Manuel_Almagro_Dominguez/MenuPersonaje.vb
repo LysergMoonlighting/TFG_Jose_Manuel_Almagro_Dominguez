@@ -72,7 +72,22 @@ Public Class MenuPersonaje
     Private Sub Desconectar_Click(sender As Object, e As EventArgs) Handles Desconectar.Click
         DatosJugador.idPlayer = idPlayer
         DatosJugador.Show()
+        Me.Close()
 
         Me.Hide()
     End Sub
+
+    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
+
+    End Sub
+
+    Private Sub btImventario_Click(sender As Object, e As EventArgs) Handles btImventario.Click
+        Inventario.idCharacter = idCharacter
+        Inventario.idPlayer = idPlayer
+        Inventario.Show()
+        Me.Close()
+
+    End Sub
+
+
 End Class
