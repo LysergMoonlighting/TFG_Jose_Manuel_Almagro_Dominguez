@@ -17,3 +17,4 @@ C:\Users\lyser\Source\Repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Al
 C:\Users\lyser\source\repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.CrearPJ.resources
 C:\Users\lyser\source\repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.MenuPersonaje.resources
 C:\Users\lyser\source\repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.Inventario.resources
+C:\Users\lyser\Source\Repos\TFG_Jose_Manuel_Almagro_Dominguez\TFG_Jose_Manuel_Almagro_Dominguez\obj\Debug\TFG_Jose_Manuel_Almagro_Dominguez.AnadirObjeto.resources

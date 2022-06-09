@@ -117,30 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Desconectar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACgAAAAeCAYAAABe3VzdAAAABGdBTUEAALGPC/xhBQAAAYxJREFUWEft
-        lt2Kg0AMhed5Ct76/k8jKnpTBFtvXI54SgyT+dPuerEHQvs1J5OQQalbdzVNswV1F3ZWgvprvnSDzrkt
-        yDF/Cru+71fEsixbnGEOmOpP4UuvmAOm+qEY3/+KrQRlMYeRG7MYQbGeinHxBnVz5CxG6PpULtqgbMzm
-        kMUMyHdeiIs2qJtCyPkGkd7X67XlIHkeZHH2BmXD9/t9yPN36Z+m6VCjz4vxqQEhmZdDUPgua6QfinH2
-        FetmlMyRmZc1lMxDFmdtEG/4UCPmdP0wDJ8cztD5EGdtkE04hJUny7yshXz1Ps7aoG4ChfwQWdam+Kms
-        DbZt+2mCa4v5JbMOTz4U85MvfYohH8uaFL/k+w+4f0aNZNms67o9a/u3/3SihrL8FDl7g8/n89Aw5pde
-        KObXnL1BSDYNNdY+nU/h7A2SdXNEXddrVVXeHGWdR2ku2iDkGyIUsfMsLt4g9Hg8vMPIgCf1PEizG8dx
-        RczzvEUJ+wZDpNaHuPiKf4tPXTH0bf7f4Dle1x+tHDQUTw7avAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="recargar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAZ9JREFUOE+d
-        k71LA0EQxe+f8A/QQvwARVEMQjpLO9tUVhY2gq2NdlZCBAuLgIUIggEFUYMBRVKIpVgIglXSRMHYxOae
-        ++Zu9vY+Iw4Mb3cy87u3l1sPJjrtNiWl371erPbT7+f2qnpFDQQyamXPJqNoptChQvzXY+C5Kuu8XtVM
-        h9ZNaxG4LwE38wLE0w7wsBn8FvYmNddhCng5B5xOCxCNNZytDNleVwvfoUAJbC4AJ1NR1iaBiwo+98u2
-        VzXXIYN/ikAVZMLuD8aAo6XU8T0dcpM1N2XIQJJ7VEeBvYnYjBxZGs5ngavlYG2CdTbomnV1YWccoNZl
-        JYX6jAXqIIEuxFWZocvdEUmtRw4dIIN112GWukAG65FDvmQDfNkatgMEug9IaZ5DCQL5nTUqAmFdgVlQ
-        rSd/l5U2yEs2QNyty16B/vt1bKhI4x82XfIYt6vBNTPXzX+rw29tw+88/glqHVpVKG+DSQJxOC7Z/+oM
-        hGZePRni8ZmE8SHMsFYETTt01IJDIPf/cqgqwyGouVHK7EnqQIcf3a6s83riCvwCpzpDz2dn6ToAAAAA
-        SUVORK5CYII=
-</value>
-  </data>
 </root>

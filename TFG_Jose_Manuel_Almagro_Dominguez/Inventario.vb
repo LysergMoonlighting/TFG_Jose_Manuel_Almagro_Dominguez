@@ -3,6 +3,7 @@
 Public Class Inventario
     Public Property idCharacter As Integer
     Public Property idPlayer As Integer
+
     Public idItem As Integer
 
     Private Sub Inventario_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -228,6 +229,11 @@ Public Class Inventario
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        AnadirObjeto.idCharacter = idCharacter
+        AnadirObjeto.Show()
+    End Sub
 
+    Private Sub recargar_Click(sender As Object, e As EventArgs) Handles recargar.Click
+        ConexionBD()
     End Sub
 End Class

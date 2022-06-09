@@ -1,23 +1,23 @@
-﻿Imports System.Data.SqlClient
+﻿
 
-Public Class CrearPJ
+Imports System.Data.SqlClient
 
-    Public Property idPlayer As Integer
-    Dim characterName As String
-    Dim idRace As Integer
+Public Class AnadirObjeto
+
+    Public Property idCharacter As Integer
+    Public cantidad As Integer
+    Public itemid As Integer
 
     Public Function ConexiónBD()
 
         Dim cadenaConexion As SqlConnectionStringBuilder = New SqlConnectionStringBuilder
         Dim conexion As SqlConnection
-        Dim consulta2 As String
         Dim consulta As String
         Dim commando As SqlCommand
         Dim da As New SqlDataAdapter
         Dim dt As New DataTable
         Dim ds As New DataSet
 
-        consulta2 = "select * from Player"
 
         cadenaConexion.DataSource = "localhost\SQLEXPRESS"
         cadenaConexion.UserID = "sa"
@@ -25,7 +25,7 @@ Public Class CrearPJ
         cadenaConexion.InitialCatalog = "TFG_Jose_Manuel_Almagro_Dominguez_Juego"
 
         conexion = New SqlConnection(cadenaConexion.ConnectionString)
-        consulta = "Select * from Race"
+        consulta = "Select * from Item"
         commando = New SqlCommand(consulta, conexion)
 
 
@@ -33,16 +33,15 @@ Public Class CrearPJ
 
         da.SelectCommand = commando
         da.Fill(dt)
-        cbRace.DataSource = dt
-        cbRace.DisplayMember = "name"
-        cbRace.ValueMember = "id"
+        cbObjetos.DataSource = dt
+        cbObjetos.DisplayMember = "name"
+        cbObjetos.ValueMember = "id"
         conexion.Close()
 
 
 
     End Function
-
-    Public Function CrearPersonaje()
+    Public Function AnadirObjeto()
 
         Dim cadenaConexion As SqlConnectionStringBuilder = New SqlConnectionStringBuilder
         Dim conexion As SqlConnection
@@ -56,7 +55,7 @@ Public Class CrearPJ
         cadenaConexion.InitialCatalog = "TFG_Jose_Manuel_Almagro_Dominguez_Juego"
 
         conexion = New SqlConnection(cadenaConexion.ConnectionString)
-        consulta = "exec CreateCharacter @playerId = " & idPlayer & ",@name = '" + characterName + "' , @raceId =" & idRace
+        consulta = "exec AddItem @idItem = " & itemid & ", @idCharacter =" & idCharacter & " ,@cantidad =" & cantidad
         commando = New SqlCommand(consulta, conexion)
 
 
@@ -69,34 +68,26 @@ Public Class CrearPJ
 
 
     End Function
-
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        characterName = tbcharacterName.Text
+    Private Sub cbObjetos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbObjetos.SelectedIndexChanged
         Try
-            idRace = cbRace.SelectedValue.ToString
+            itemid = cbObjetos.SelectedValue.ToString
         Catch ex As Exception
-            idRace = 0
+            itemid = 0
         End Try
-        CrearPersonaje()
-        Me.Hide()
+
 
 
     End Sub
 
-    Private Sub CrearPJ_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
+        cantidad = CInt(NumericUpDown1.Value.ToString)
+    End Sub
+
+    Private Sub AnadirObjeto_Load(sender As Object, e As EventArgs) Handles Me.Load
         ConexiónBD()
     End Sub
 
-
-    Private Sub tbcharacterName_LostFocus(sender As Object, e As EventArgs) Handles tbcharacterName.LostFocus
-        characterName = tbcharacterName.Text
-    End Sub
-
-    Private Sub cbRace_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbRace.SelectedIndexChanged
-
-        idRace = cbRace.SelectedIndex + 1
-
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        AnadirObjeto()
     End Sub
 End Class

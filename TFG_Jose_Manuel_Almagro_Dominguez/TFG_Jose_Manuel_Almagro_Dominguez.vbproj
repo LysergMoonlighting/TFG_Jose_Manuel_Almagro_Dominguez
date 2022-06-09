@@ -85,6 +85,18 @@
     <Compile Include="DatosJugador.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AnadirObjeto.Designer.vb">
+      <DependentUpon>AnadirObjeto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnadirObjeto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stats.Designer.vb">
+      <DependentUpon>Stats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stats.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inventario.Designer.vb">
       <DependentUpon>Inventario.vb</DependentUpon>
     </Compile>
@@ -144,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DatosJugador.resx">
       <DependentUpon>DatosJugador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnadirObjeto.resx">
+      <DependentUpon>AnadirObjeto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stats.resx">
+      <DependentUpon>Stats.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario.resx">
       <DependentUpon>Inventario.vb</DependentUpon>
